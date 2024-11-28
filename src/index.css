@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* common css start */
+  .head{
+    @apply text-[22px] lg:text-[38px] font-semibold tracking-[2.66px] font-Barlow text-primary relative uppercase after:content-[''] after:h-[2px] after:bg-brand after:absolute
+  }
+  /* common css end */
+  /* nav start  */
+  .navlink {
+    @apply font-oswald text-secondery font-normal text-[18px] tracking-[0.36px];
+  }
+  .signin {
+    @apply font-oswald text-primary font-normal text-[16px];
+  }
+  /* nav end */
+  /* Banner start */
+  .social{
+    @apply w-[35px] h-[35px] bg-secondery rounded-full grid place-items-center
+  }
+  /* Banner end */
+  /* about start */
+  .abtlist{
+    @apply font-Barlow text-primary text-[18px]
+  }
+  /* about end */
+  /* stream start */
+  .StreamShapOne{
+    clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+  }
+  .StreamShapTwo{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+  }
+  .slick-slide{
+    margin: 0 20px;
+  }
+  /* stream end */
+  /* game start */
+  .gmtitle{
+    @apply font-Barlow font-semibold text-primary text-[22px] tracking-[1.54px] mt-[18px] lg:text-left text-center
+  }
+  .gmName{
+    @apply font-oswald text-base text-[#666] tracking-[1.6px] lg:mt-[20px] mt-2 lg:text-left text-center
+  }
+  .dpersent{
+    @apply w-[40px] h-[30px] bg-brand text-[14px] text-primary p-1 font-oswald tracking-[1.4px] lg:text-left text-center
+  }
+  .delprice{
+    @apply font-oswald text-base text-[#666] tracking-[0.96px]
+  }
+  /* game end */
+  /* question start */
+
+  .Qnumber{
+    @apply font-Barlow font-semibold text-primary lg:text-[38px] text-[20px] tracking-[3.8px] lg:py-3 py-1 lg:px-[26px] px-2 h-fit bg-brand grid place-items-center
+  }
+  .Qtitle{
+    @apply text-primary font-semibold font-Barlow lg:text-[22px] text-base uppercase
+  }
+  .mainQ{
+    @apply text-[#666] font-oswald lg:text-base text-[14px] lg:mt-[11px] mt-0 
+  }
+
+  /* question end */
+  /* footer start */
+  .footicon{
+    @apply w-[50px] h-[50px] bg-[#212529] grid place-items-center duration-[.4s] hover:bg-brand rounded-full text-[22px] text-primary
+  }
+  .footlist{
+    @apply text-[#666] font-oswald text-base capitalize hover:text-brand duration-[.4s]
+  }
+  .foothead{
+    @apply uppercase text-primary font-Barlow text-[25px] font-semibold tracking-[1.75px] 
+  }
+  /* footer end */
+}
